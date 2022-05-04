@@ -36,10 +36,10 @@ dayNight.addEventListener("click", ()=> {
     document.body.classList.toggle("dark");
 
     if (Image_Id.src.match("logo1.png")) {
-        Image_Id.src = "images/logo2.png";
+        Image_Id.src = "./images/logo2.png";
     }
     else {
-        Image_Id.src = "images/logo1.png";
+        Image_Id.src = "./images/logo1.png";
     }
 
 })
@@ -60,13 +60,11 @@ const play = document.getElementById("play");
 play.onclick = function() {
     if (mySong.paused) {
         mySong.play()
-        play.src ="images/pasue2.png";
+        play.src ="./images/pasue2.png";
         play.classList.add("spin");
     } else {
         mySong.pause();
-        play.src ="images/play1.png";
+        play.src ="./images/play1.png";
         play.classList.remove("spin");
-
-
     }
 }
