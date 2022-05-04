@@ -903,7 +903,7 @@ body.dark {
   }
   .home::before {
     content: "";
-    background-image: url("/images/logo1.png");
+    background-image: url("images/logo1.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
