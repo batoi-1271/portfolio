@@ -1,0 +1,131 @@
+.style-switcher {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  padding: 15px;
+  width: 200px;
+  border: 1px solid #e8dfec;
+  background-color: #fdf9ff;
+  z-index: 150;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.style-switcher .s-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  background: #fdf9ff;
+  color: #302e4d;
+  right: 100%;
+  border: 1px solid #e8dfec;
+  margin-right: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.style-switcher .s-icon i {
+  line-height: 40px;
+}
+
+.style-switcher .s-icon img {
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid red;
+}
+
+.style-switcher .style-switcher-toggler {
+  top: 0;
+}
+
+.style-switcher .day-night {
+  top: 55px;
+}
+
+.style-switcher .play {
+  top: 110px;
+}
+
+.style-switcher h4 {
+  margin: 0 0 10px;
+  color: #504e70;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.style-switcher .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.style-switcher .colors span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.style-switcher .color-1 {
+  background-color: #ec1839;
+}
+
+.style-switcher .color-2 {
+  background-color: #fa5b0f;
+}
+
+.style-switcher .color-3 {
+  background-color: #37b182;
+}
+
+.style-switcher .color-4 {
+  background-color: #1854b4;
+}
+
+.style-switcher .color-5 {
+  background-color: #f021b2;
+}
+
+.style-switcher.open {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+}
+/*# sourceMappingURL=style-switcher.css.map */
