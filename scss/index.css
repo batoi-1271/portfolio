@@ -750,6 +750,7 @@ body.dark {
 }
 
 .portfolio .portfolio-item .portfolio-item-inner .itemHover .itemHover-content p {
+  color: var(--text-black-700);
   font-size: 16px;
 }
 
